@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&family=Poppins:wght@400;500;700&family=Raleway&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: Raleway;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+main{
+    background-color: rgb(238, 238, 238);
+}
+
+#inicio{
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100vh;
+}
+
+#inicio div img{
+    width:100%;
+
+}
+
+#inicio .texto-inicio{
+    display:flex;
+    font-size: 1.5em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+
+}
+
+.texto-inicio p {
+    font-size: 1.5em;
+}
+
+#promocao{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+        
+}
+#promocao p {
+    font-size: 2em;
+}
+
+.backg{
+    width:100vw;
+    height:90vh;
+    background: url('./promocao.jpg') no-repeat center center;
+    background-size: 100% auto;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#promocao ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background: rgba(255,255,255,0.8);
+    padding:20px;
+    width:auto;
+    text-align: center;
+}
+
+#promocao ul li{
+    list-style: none;
+    font-size: 1.5em;
+
+}
+
+#empresas{
+    width: 100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    background: url('./empresas.jpg')  no-repeat center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: flex-end;
+    gap:20px;
+    font-size: 1.5em;
+    color:white;
+}
+#empresas p{
+    background-color: rgba(0,0,0,0.8);
+}
+
+#contato{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#numero-whats{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#numero-whats::before{
+    content:url('./logo-whats.png');
+
+}
+#rodape{
+    width:100vw;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+
+}
+
+
+
+#rodape .logo {
+    font-size: 24px;
+    letter-spacing: 4px;
+    display:flex;
+    align-items: center;
+    gap:20px;
+    text-decoration: none;
+    color:black;
+}
+#rodape .logo img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+   
+@media screen and (max-width:1000px) { 
+     
+    .texto-inicio p{
+        font-size: 1em;
+    };
+    #promocao ul li{
+        font-size: 1em;
+    }
+    .backg{
+        background-size: auto 100%;
+    }
+    #contato{
+        font-size: 1em;
+    }
+    
+}
